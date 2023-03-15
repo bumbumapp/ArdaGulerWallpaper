@@ -19,10 +19,10 @@ class WallpapersAdapter(private var images: List<Int>,private val listener: OnIt
     ): WallpaperViewHolder {
         val inflater= LayoutInflater.from(parent.context)
         return if (viewType==0){
-            val binding=WallpapersBinding.inflate(inflater,parent,false)
+            val binding= WallpapersBinding.inflate(inflater,parent,false)
             WallpaperViewHolder(binding)
         } else{
-            val binding=ItemSmallBinding.inflate(inflater,parent,false)
+            val binding= ItemSmallBinding.inflate(inflater,parent,false)
             WallpaperViewHolder(binding)
         }
 

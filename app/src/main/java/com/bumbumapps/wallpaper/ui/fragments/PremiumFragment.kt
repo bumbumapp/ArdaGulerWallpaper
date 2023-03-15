@@ -13,8 +13,8 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.bumbumapps.wallpaper.R
-import com.bumbumapps.wallpaper.adapter.WallpapersAdapter
 import com.bumbumapps.wallpaper.databinding.PremiumFragmentBinding
+import com.bumbumapps.wallpaper.adapter.WallpapersAdapter
 import com.bumbumapps.wallpaper.ui.listener.OnItemClickListener
 import com.bumbumapps.wallpaper.ui.listener.OnSwipeTouchListener
 import com.bumbumapps.wallpaper.utils.Constants.PREMIUM_WALLPAPERS_STARTED_INDEX

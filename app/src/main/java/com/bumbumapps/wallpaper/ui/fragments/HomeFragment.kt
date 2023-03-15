@@ -6,9 +6,7 @@ import android.annotation.SuppressLint
 import android.os.Bundle
 import android.util.Log
 import android.view.*
-import android.widget.Toast
 import androidx.activity.addCallback
-import androidx.core.view.GestureDetectorCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.Navigation
@@ -16,8 +14,8 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.bumbumapps.wallpaper.R
-import com.bumbumapps.wallpaper.adapter.WallpapersAdapter
 import com.bumbumapps.wallpaper.databinding.HomeFragmentBinding
+import com.bumbumapps.wallpaper.adapter.WallpapersAdapter
 import com.bumbumapps.wallpaper.ui.listener.OnItemClickListener
 import com.bumbumapps.wallpaper.ui.listener.OnSwipeTouchListener
 import com.bumbumapps.wallpaper.ui.viewmodel.RawImagesViewModel

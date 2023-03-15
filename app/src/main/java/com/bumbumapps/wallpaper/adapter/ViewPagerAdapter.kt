@@ -21,7 +21,7 @@ class ViewPagerAdapter(private val context:Context,private var wallpapers:List<I
 
     override fun instantiateItem(container: ViewGroup, position: Int): Any {
         val inflater=LayoutInflater.from(context)
-        val binding=ImageViewBinding.inflate(inflater,container,false)
+        val binding= ImageViewBinding.inflate(inflater,container,false)
 
         Glide.with(context)
             .load(wallpapers[position])

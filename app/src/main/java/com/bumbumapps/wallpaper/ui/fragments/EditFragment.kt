@@ -22,10 +22,9 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.bumbumapps.wallpaper.R
-import com.bumbumapps.wallpaper.adapter.EffectsAdapter
 import com.bumbumapps.wallpaper.databinding.EditFragmentBinding
+import com.bumbumapps.wallpaper.adapter.EffectsAdapter
 import com.bumbumapps.wallpaper.utils.effectsResults
-import com.bumbumapps.wallpaper.utils.intToBitmap
 import com.bumbumapps.wallpaper.ui.listener.OnEffectsItemClicked
 import com.bumbumapps.wallpaper.utils.rotateImage
 import com.bumbumapps.wallpaper.ui.viewmodel.RawImagesViewModel
@@ -42,7 +41,7 @@ import java.io.FileOutputStream
 class EditFragment:Fragment(),OnEffectsItemClicked {
     private val viewModel: RawImagesViewModel by activityViewModels()
 
-    private var _binding:EditFragmentBinding?=null
+    private var _binding: EditFragmentBinding?=null
     private val binding get() = _binding
 
 

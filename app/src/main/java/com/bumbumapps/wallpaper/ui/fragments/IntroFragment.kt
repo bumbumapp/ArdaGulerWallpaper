@@ -10,6 +10,7 @@ import androidx.navigation.fragment.findNavController
 import com.bumbumapps.wallpaper.R
 import com.bumbumapps.wallpaper.databinding.IntroScreenBinding
 
+
 class IntroFragment:Fragment() {
     private var _binding: IntroScreenBinding?=null
     private val binding get()=_binding!!

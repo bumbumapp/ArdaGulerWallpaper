@@ -1,6 +1,5 @@
 package com.bumbumapps.wallpaper.ui.fragments
 
-import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
 import android.annotation.SuppressLint
 import android.app.AlertDialog
@@ -8,7 +7,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.animation.AccelerateDecelerateInterpolator
 import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.activity.addCallback
@@ -16,11 +14,10 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
-import androidx.viewpager.widget.PagerAdapter
 import androidx.viewpager.widget.ViewPager
 import com.bumbumapps.wallpaper.R
-import com.bumbumapps.wallpaper.adapter.ViewPagerAdapter
 import com.bumbumapps.wallpaper.databinding.WallpaperViewBinding
+import com.bumbumapps.wallpaper.adapter.ViewPagerAdapter
 import com.bumbumapps.wallpaper.ui.viewmodel.RawImagesViewModel
 import com.bumbumapps.wallpaper.utils.Constants.LATEST_WALLPAPERS_ENDED_INDEX
 import com.bumbumapps.wallpaper.utils.Constants.LATEST_WALLPAPERS_STARTED_INDEX
@@ -43,7 +40,7 @@ class WallpaperViewFragment:Fragment (){
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding=WallpaperViewBinding.inflate(inflater,container,false)
+        _binding= WallpaperViewBinding.inflate(inflater,container,false)
         return binding?.root
     }
 

@@ -21,7 +21,7 @@ class EffectsAdapter(private var context: Context, private var bitmap: Bitmap, p
         viewType: Int
     ): EffectsViewHolder {
         val inflater= LayoutInflater.from(parent.context)
-            val binding=AdapterEffectsBinding.inflate(inflater,parent,false)
+            val binding= AdapterEffectsBinding.inflate(inflater,parent,false)
            return EffectsViewHolder(binding)
 
 
