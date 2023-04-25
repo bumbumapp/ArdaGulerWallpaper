@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.bumbumapps.wallpaper">
+    package="com.lordapps.wallpaper">
 
     <uses-permission android:name="android.permission.SET_WALLPAPER" />
     <application
@@ -25,7 +25,7 @@
                 android:resource="@xml/file_provider_paths"/>
         </provider>
         <activity
-            android:name="com.bumbumapps.wallpaper.MainActivity"
+            android:name="com.lordapps.wallpaper.MainActivity"
             android:configChanges="orientation|screenSize|keyboard"
             android:exported="true">
             <intent-filter>
@@ -36,6 +36,11 @@
         </activity>
         <activity android:name="com.canhub.cropper.CropImageActivity"
             android:theme="@style/AppTheme"/>
+
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/banner_app_id"/>
     </application>
 
 </manifest>
